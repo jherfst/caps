@@ -7,8 +7,12 @@ import { Path } from '@app/@core/structs';
 })
 export class DashboardPage implements OnInit {
   path = Path;
-
+  capitilizedText: string = '';
   constructor() {}
 
   ngOnInit(): void {}
+
+  onClickCaps(data: any): void {
+    this.capitilizedText = (data.text as string)?.toUpperCase()?.trim();
+  }
 }

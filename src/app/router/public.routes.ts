@@ -6,7 +6,7 @@ export const PUBLIC_ROUTES: Routes = [
   {
     path: Path.Home,
     loadChildren: () =>
-      import('@app/pages/public/home/home.module').then((m) => m.HomeModule),
+      import('@app/pages/private/dashboard/dashboard.module').then((m) => m.DashboardModule),
   },
   {
     path: '',
