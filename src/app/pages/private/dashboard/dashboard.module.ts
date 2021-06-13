@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { FooterModule } from '@app/components/footer/footer.module';
+import { HeaderModule } from '@app/components/header/header.module';
 import { DashboardPage } from './dashboard.page';
 
 @NgModule({
@@ -10,7 +12,7 @@ import { DashboardPage } from './dashboard.page';
   imports: [
     ClipboardModule,
     FormsModule,
-    CommonModule,
+    CommonModule, HeaderModule, FooterModule,
     RouterModule.forChild([
       {
         path: '',
