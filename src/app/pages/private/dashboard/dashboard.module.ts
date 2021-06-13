@@ -1,3 +1,4 @@
+import { ClipboardModule } from '@angular/cdk/clipboard';
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -7,6 +8,7 @@ import { DashboardPage } from './dashboard.page';
 @NgModule({
   declarations: [DashboardPage],
   imports: [
+    ClipboardModule,
     FormsModule,
     CommonModule,
     RouterModule.forChild([
@@ -14,8 +16,8 @@ import { DashboardPage } from './dashboard.page';
         path: '',
         component: DashboardPage,
         data: {
-          title: 'Dashboard',
-          robots: 'noindex, nofollow',
+          title: 'Capitalize',
+          robots: 'all', // noindex, nofollow
         },
       },
     ]),
